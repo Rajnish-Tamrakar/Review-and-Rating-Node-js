@@ -10,7 +10,7 @@ app.use(express.json()); //middleware
 
 
 app.use('/', userRouter);//middleware
-app.use('/company',require("./routes/companyRoutes")
+app.use('/company',require("./routes/companyRoutes"))
         
 console.log('hey i am env i am running on port', process.env.port)
 app.listen(9000, () => {
